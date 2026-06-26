@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prectic set </title>
+<style>
+    *{
+          margin: 0px;
+          padding: 0px;
+            box-sizing: border-box;
+    }
+    /* best form of transform */
+     nav .material-symbols-outlined:hover {
+            color: #ffe082;
+            transform: scale(1.15);
+     }
+    nav{
+    
+     background-color: #d32f2f;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;  /* icons right side, change to space-between for spread */
+            gap: 25px;                  /* equal spacing between icons */
+            padding: 12px 24px;
+    }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+ color: white;
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.2s ease;
+            margin-right: 200px;
+   
+}
+#container{
+    border:3px solid;
+margin: 2px;
+}
+.box{
+    height: 50px;
+    width: 50px;
+    background-color: #ffe082;
+    margin: 5px;
+    gap: 5px;
+display: inline-block; 
+/* display always insdie cntainer good depend on contianer size  */
+/* display: flex;
+  flex-direction: column;
+    flex-direction: column-reverse; */
+
+}
+#box1{
+    float: right;
+
+}
+#box2{
+    float: left;
+     flex-shrink:20 ; 
+     flex-grow: 2;  /*ke bahar ja skta hai lekin shrink bahar nhi jyega */
+}
+#box4{
+    border-radius: 340%;
+    background-color: #810b0b;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+
+    
+    flex-wrap:wrap ;/*container chhota hoga to box bhi fit hota jayega niche ,upar ya size chhota hoga*/ 
+    justify-content: center;/* start,end, space-between, sapce-around,sapce-evenly */
+}
+#box5{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    right: 30px;
+    background-color: aqua;
+}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle,home,menu,search" />
+    
+</head>
+<body>
+ <nav>
+<span class="material-symbols-outlined "id="A">home</span> 
+<span class="material-symbols-outlined "id="A">menu</span> 
+<span class="material-symbols-outlined "id="A">search</span> 
+<span class="material-symbols-outlined " id="A">account_circle</span> 
+</nav>
+<main>
+    <div id="box4">box</div>
+    <div id="container">
+        <div id="box1" class="box">box1 </div>
+        <div id="box2"class="box">box2  </div>
+        <div id="box3"class="box">box3</div> 
+    </div>
+    <div id="box5">box5</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,220 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+        
+        color:black;
+            cursor: pointer;
+            transition: transform 0.2s ease, color 0.2s ease;
+            margin-right: 200px;
+            height: 10uv;
+   
+}
+
+nav{
+    background-color: bisque;
+    border: 2px solid;
+     display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 40px;  /* icons right side, change to space-between for spread */
+                             /* equal spacing between icons */
+            /* padding: 12px 24px;
+            height: 25px;
+            padding: 5px; */
+}
+#imgcontainer{
+height: 200px;
+    border: 4px solid black;
+    
+    display: flex;
+    /* align-items: center; */
+    /* justify-self: center; */
+    justify-content: center;
+
+}
+.box{
+    height: 50px;
+    width: 55px;
+    border:2px solid rgb(131, 86, 28);
+     /* display: flex; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    align-self: center;
+    /* justify-content: center;  */
+    /* display: inline-block; */
+    /* justify-content: space-around; */
+
+}
+#mediabox{
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    margin: 10px;
+    border: 2px solid black;
+
+
+}
+@media screen and ( min-width:  300px ) and ( max-width: 400px ){ 
+    #mediabox {   
+ 
+    background-color:white;
+}
+}  
+@media screen and ( min-width: 400px){ 
+    #mediabox{ 
+ 
+      background-color: red;
+    }
+}
+
+
+#box-container{
+    border: 2px solid black;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 0; /*iske bina container ke hisab se shrink nhi hoga 1 box*/
+}
+#box1{
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+button{
+    height: 50px;
+    width: 200px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    border: 3px solid black;
+transition-property: all;
+ transition-duration: 1s;
+ transition-timing-function: ease-in-out;
+ transition-delay: 0s;
+ /* transition: all 1s ease-in-out 0s ; */
+
+}
+button:hover{
+    color: blueviolet;
+    background-color:pink;
+    height: 60px;
+    width: 210px;
+}
+button:active{
+    background-color: brown;
+    color: violet;
+    height: 70px;
+    width: 210px;
+}
+#box5{
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    align-items: center; 
+    transition: all 2s ease-in;
+
+}
+#box6{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(179, 27, 179);
+    border: 2px solid rgb(77, 21, 21);
+    border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    display: flex;
+    align-items: center; 
+    transition: all 2s ease-in;
+}
+
+#box7{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(153, 152, 63);
+    border: 2px solid rgb(218, 158, 158);
+    border-radius: 30px;
+    position: fixed;
+    top: 200px;
+    right: 200px;
+    display: flex;
+    align-items: center; 
+    transition: all 2s ease-in;
+}
+#box8{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(238, 234, 20);
+    border: 2px solid rgb(26, 21, 21);
+    border-radius: 20px;
+    position: fixed;
+    top: 20px;
+    right: 200px;
+    display: flex;
+    align-items: center; 
+    transition: all 2s ease-in;
+}
+#box5:hover{
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: scale(2); */
+    /* /* transform: scaleX(3); */
+    transform: translate(200px);
+    
+} 
+#box6:hover{
+    /* transform: rotate(45deg); */
+    transform: rotateX(45deg);
+    transform: scale(2);
+    /* /* transform: scaleX(3); */
+    /* transform: translate(40px,50px); */
+}
+#box7:hover{
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: scale(2); */
+     transform: scaleX(6);
+    /* transform: translate(40px); */
+}#box8:hover{
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: scale(2); */
+
+    /* transform: translate(40px); */
+transform: skew(45deg);
+}
+#box9{
+    height: 50px;
+    width: 60px;
+    background-color: #f50606da;
+    border: 2px solid rgb(26, 21, 21);
+    border-radius: 10px;
+    position:absolute;
+    top: 150px;
+    left: 20px;
+    display: flex;
+    align-items: center; 
+    animation: ghumakd 5s ease-in-out 3s infinite;
+}
+@keyframes ghumakd {
+    /* from{ left: 20px;}
+    to {left: 1300px;} */
+    /* 0%  { left: 20px;}
+    50%{left: 150px;}
+    100% {left: 1300px;}    */
+    0%  { left: 20px; top:0px;}
+    50%{left: 150px; top:100px;}
+    100% {left: 1300px;top: 0px;}
+}

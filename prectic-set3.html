@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        /* बॉडी को फुल हाइट देना ज़रूरी है ताकि 90% काम करे */
+        /* html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        .progress-bar-container {
+            height: 358px;
+            width: 25px;
+            background-color: #ddd; /* बैकग्राउंड का रंग */
+            border: 2px solid black;
+            border-radius: 20px;
+            position:relative;
+            overflow: hidden;
+            /* ताकि अंदर का हिस्सा बाहर न निकले */
+        }
+        .progress-bar{
+            height: 50%;
+            width: 100%;
+            background-color: blueviolet;
+            border-radius: 20px;
+animation: animation-progress-bar 3s 3;
+        }
+@keyframes animation-progress-bar {
+    0%{height: 0%;}
+    80%{height: 70%;}
+    90%{height: 90%;}
+    100%{height: 100%}
+    
+}
+        /* .progress-bar {
+            height: 50%; /* यहाँ से आप प्रोग्रेस कंट्रोल कर सकते हैं (0% to 100%) */
+            /* width: 100%; */
+            /* background-color: rgb(228, 135, 21); */
+            /* border-radius: 20px; */ 
+        
+    </style>
+</head>
+<body>
+
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+    </div>
+
+</body>
+</html>
